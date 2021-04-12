@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +7,10 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/gamestyle.css">
+  <link rel="stylesheet" href="css/slick.css">
   <script src="js/jquery-3.5.1.min.js"></script>
-  <script src="js/ScrollMagic.min.js"></script>
-  <script src="js/debug.addIndicators.min.js"></script>
-  <script src="js/tweenmax.js"></script>
-  <script src="js/animation.gsap.js"></script>
-  <script src="js/horizontal.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/mainsilde.js"></script>
 </head>
 
 <body>
@@ -24,7 +21,7 @@
       </div>
       <ul class="navbar__menu">
         <li class="navbar__menu__item active" data-link="#div1">HOME</li>
-        <li class="navbar__menu__item" data-link="#js-wrapper">INFO</li>
+        <li class="navbar__menu__item" data-link="#wrapper">INFO</li>
         <li class="navbar__menu__item" data-link="#div2">DESTINY</li>
         <li class="navbar__menu__item" data-link="#div3">MEDIA</li>
       </ul>
@@ -36,7 +33,7 @@
   </nav>
   <section class="visual" id="div1">
     <div class="mainvideo_p">
-    <video class="mainvideo" loop autoplay muted>
+    <video class="mainvideo" loop autoplay muted playsinline data-autoplay data-keepplaying>
       <source src="images/mainvideo.mp4" type="video/mp4" />
     </video>
     <div class="button_p">
@@ -45,7 +42,59 @@
     </div>
   </div>
   </section>
-  <div class="wrapper" id="js-wrapper">
+  <section class="slide_section" id="wrapper">
+    <div class="main_title">전설이 사라지는 시대</div>
+  <div class="side_main">
+    <img src="images/horizontalmain.png">
+  </div>
+  <div class="redwall01">
+    <img src="images/red_wall01.png">
+  </div>
+  <ul class="slide wrapper">
+    <li>
+        <div class="slide_div">
+          <div class="skewimage">
+            <img src="images/mainvisual01.jpg">
+            <span>처절한 용병들의 서사시</span>
+          </div>
+        </div>
+    </li>
+    <li>
+        <div class="slide_div">
+          <div class="skewimage">
+            <img src="images/mainvisual02.jpg">
+            <span>광대한 파이웰 대륙</span>
+          </div>
+        </div>
+    </li>
+    <li>
+      <div class="slide_div">
+      <div class="skewimage">
+        <img src="images/mainvisual04.jpg">
+        <span>세상과 맞설 수 있는 자</span>
+      </div>
+      </div>
+  </li>
+  <li>
+    <div class="slide_div">
+      <div class="skewimage">
+        <img src="images/mainvisual05.jpg">
+        <span>나, 그리고 나의 용병단</span>
+      </div>
+    </div>
+</li>
+<li>
+  <div class="slide_div">
+    <div class="skewimage">
+      <img src="images/mainvisual03.jpg">
+      <span>만인의 모든 것에 대한 투쟁</span>
+    </div>
+  </div>
+</li>
+</ul>
+  </section>
+ 
+  <!-- <div class="wrapper" id="js-wrapper">
     <div class="main_title">전설이 사라지는 시대</div>
     <div class="side_main">
       <img src="images/horizontalmain.png">
@@ -86,7 +135,7 @@
         </div>
       </section>
     </div>
-  </div>
+  </div> -->
   <div id="div2">
     <div class="main_title">이 세계는 운명을 맞이할 준비가 되어있습니다.</div>
     <div class="sub_p">광대하지만 분열된 대륙. 차가운 사막. 화려하지만 거친 도시.
@@ -168,19 +217,10 @@
   <footer>
     Copyright © Pearl Abyss Corp. All Rights Reserved.
   </footer>
-  <script type="text/javascript" language="JavaScript">
-    var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'Windows CE;', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson', 'Mobile', 'Symbian', 'Opera Mobi', 'Opera Mini', 'IEmobile');
-    for (var word in mobileKeyWords){
-        if (navigator.userAgent.match(mobileKeyWords[word]) != null){
-                  window.location.href = "m_index.html";
-            break;
-              }
-    }
-</script>
-  <script src="js/snow.js"></script>
+  <!-- <script src="js/snow.js"></script> -->
   <script src="js/nav.js"></script>
   <script src="js/tab.js"></script>
-  <script src="js/scrollanimation.js"></script>
+  <!-- <script src="js/scrollanimation.js"></script> -->
 </body>
 
 </html>
